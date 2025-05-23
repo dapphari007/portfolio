@@ -1,0 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+# https://space-portfolio-main.netlify.app/* https://yourprimarydomain.com/:splat 301!
+
+# Handle 404s with custom page
+/* /index.html 200

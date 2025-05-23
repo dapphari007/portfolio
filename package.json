@@ -2,11 +2,13 @@
   "name": "space-portfolio",
   "version": "1.0.1",
   "private": true,
+  "packageManager": "yarn@3.6.3",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn install --immutable && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cloudflare-build": "npx next build"
   },
   "author": {
     "name": "HARISH K",
@@ -84,6 +86,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.160.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
