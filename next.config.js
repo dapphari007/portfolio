@@ -1,24 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Optimize for Cloudflare Pages
+  // Static site export for Cloudflare Pages
   output: 'export',
-  // Disable image optimization since Cloudflare Pages doesn't support it
+  // Disable image optimization for static export
   images: {
     unoptimized: true,
   },
-  // Ensure compatibility with deployment environment
+  // Skip type checking during build for faster builds
   typescript: {
-    // Handled during CI/CD, not during build
     ignoreBuildErrors: true,
   },
+  // Skip linting during build for faster builds
   eslint: {
-    // Handled during CI/CD, not during build
     ignoreDuringBuilds: true,
-  },
-  // Disable trailing slashes for Cloudflare Pages
-  trailingSlash: false,
-  // Ensure proper asset prefixes for Cloudflare Pages
-  assetPrefix: process.env.NODE_ENV === 'production' ? undefined : undefined,
+  }
 }
 
 module.exports = nextConfig

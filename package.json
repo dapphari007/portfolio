@@ -2,13 +2,11 @@
   "name": "space-portfolio",
   "version": "1.0.1",
   "private": true,
-  "packageManager": "yarn@3.6.3",
   "scripts": {
     "dev": "next dev",
-    "build": "yarn install --immutable && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "cloudflare-build": "npx next build"
+    "lint": "next lint"
   },
   "author": {
     "name": "HARISH K",
