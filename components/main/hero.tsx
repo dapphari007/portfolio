@@ -17,21 +17,14 @@ export const Hero = () => {
           loop
           className="rotate-180 absolute top-[-340px] left-0 w-full h-full object-cover"
           style={{ 
-            filter: "hue-rotate(70deg) brightness(1.2) contrast(1.1)",
-            opacity: 0.9
+            filter: "brightness(0.8) contrast(1.1)",
+            opacity: 0.7
           }}
         >
           <source src="/videos/blackhole.webm" type="video/webm" />
         </video>
         
-        {/* Blue-white gradient overlay */}
-        <div 
-          className="absolute top-0 left-0 w-full h-full"
-          style={{
-            background: "radial-gradient(circle at center, rgba(100, 149, 237, 0.1) 0%, rgba(0, 0, 50, 0.3) 70%)",
-            mixBlendMode: "screen"
-          }}
-        />
+        {/* Removed blue-white gradient overlay */}
       </div>
 
       <HeroContent />
